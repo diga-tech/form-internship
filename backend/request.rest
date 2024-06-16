@@ -1,0 +1,35 @@
+GET http://localhost:5000/intern
+
+###
+
+GET http://localhost:5000/intern/1
+
+###
+POST  http://localhost:5000/intern
+Content-Type: application/json
+
+{
+    
+    "name": "XL Axiata",
+    "role": "CVM Data Science & Analytics Intern",
+    "description": "Project COLLABORATIVE INNOVATION PROGRAMS  ini dibentuk untuk mendukung tujuan XL Axiata menjadi Leading Converged Operator di Indonesia. Para pemagang akan melakukan project dan kegiatan yang ada di XL (real project) yg berimpact untuk company dan didampingi oleh mentor-mentor dedicated.",
+    "requirement": "IPK minimal 3.00 untuk jurusan Data Science & Analytics, Computer Science and Data Analytics",
+    "duration": 3,
+    "deadline": "2024-7-10"
+}
+
+###
+PATCH   http://localhost:5000/intern/1
+Content-Type: application/json
+
+{
+    "name": "Telkomsel",
+    "role": " Machine learning and Analytics Intern",
+    "description": "Project COLLABORATIVE INNOVATION PROGRAMS  ini dibentuk untuk mendukung tujuan XL Axiata menjadi Leading Converged Operator di Indonesia. Para pemagang akan melakukan project dan kegiatan yang ada di XL (real project) yg berimpact untuk company dan didampingi oleh mentor-mentor dedicated.",
+    "requirement": "Mahasiswa perguruan tinggi aktif yang menempuh semester 5 ke atas",
+    "duration": 3,
+    "deadline": "2024-7-10"
+}
+
+###
+DELETE http://localhost:5000/intern/1
